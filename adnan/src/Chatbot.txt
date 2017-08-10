@@ -1,0 +1,30 @@
+import ChatBot from 'react-native-chatbot';
+import {
+  AppRegistry,
+  StyleSheet,
+  View
+} from 'react-native';
+import React, { Component } from 'react';
+const steps = [
+  {
+    id: '0',
+    message: 'Welcome to react chatbot!',
+    trigger: '1',
+  },
+  {
+    id: '1',
+    message: 'Bye!',
+    end: true,
+  },
+];
+
+
+export default class App extends Component {
+  render() {
+    return (
+    <View>
+<ChatBot steps={steps} />
+</View>
+    )
+  }
+}
