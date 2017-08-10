@@ -1,17 +1,31 @@
+import React, { Component } from 'react';
+import ChatBot from 'react-native-chatbot';
 import {
   AppRegistry,
   StyleSheet,
-  View,
-  Text
+  View
 } from 'react-native';
-import React, { Component } from 'react';
 
+const steps = [
+  {
+    id: '0',
+    message: 'Welcome to react chatbot!',
+    trigger: '1',
+  },
+  {
+    id: '1',
+    message: 'Bye!',
+    end: true,
+  },
+];
 
 
 export default class App extends Component {
   render() {
     return (
-    <Text> Motherfucking Chatbot Doesn't work </Text>
-    )
+      <View>
+      <ChatBot steps={steps} />
+      </View>
+    );
   }
 }

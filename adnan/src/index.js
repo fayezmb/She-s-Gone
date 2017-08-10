@@ -10,11 +10,11 @@ export default class App extends Component {
     return (
       <Router>
         <Scene key="root">
-          <Scene key="MainPage" component={MainPage} title="Main Page" initial={true} />
-          <Scene key="About" component={About}/>
-          <Scene key="Chatbot" component={Chatbot}/>
+          <Scene key="MainPage" hideNavBar component={MainPage} title="Main Page" initial /> 
+          <Scene key="About" component={About} />
+          <Scene key="Chatbot" component={Chatbot} />
         </Scene>
       </Router>
-    )
+    );
   }
 }

@@ -18,7 +18,7 @@ export default class adnan extends Component {
         {"\n"}
         {"\n"}
         {"\n"}
-          She's Gone{"\n"}
+          She&#39;s Gone{"\n"}
         </Text>
         <Text style={styles.welcome}>
           Written by Poojitha Pillamari{"\n"}
@@ -26,8 +26,8 @@ export default class adnan extends Component {
           A Game by CG-Interactive{"\n"}
           For suggestions and complaints: info@cg-interactive.com
         </Text>
-        <Body>
-          </Body>
+        <Body />
+
       </View>
          </Content>
       </Container>
@@ -40,13 +40,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-   
+
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-     fontSize: 20
   },
   instructions: {
     textAlign: 'center',
