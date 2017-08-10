@@ -19,7 +19,7 @@ export default class adnan extends Component {
 
       <Content contentContainerStyle={{ flex: 1 }} style={{ padding: 10 }}>
 
-      <View style={styles.container}>
+
       <Text style={styles.instructions}>
       {'\n'}
       {'\n'}
@@ -62,7 +62,6 @@ export default class adnan extends Component {
       >
       <Text style={{ alignSelf: 'center' }}>About</Text>
       </Button>
-      </View>
 
       </Content>
 
@@ -87,7 +86,7 @@ const styles = StyleSheet.create({
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 50,
+    marginBottom: 90,
     marginTop: -80,
     fontSize: 40,
     fontFamily: 'Roboto'
