@@ -11,8 +11,8 @@ export default class App extends Component {
       <Router>
         <Scene key="root">
           <Scene key="MainPage" hideNavBar component={MainPage} title="Main Page" initial /> 
-          <Scene key="About" component={About} />
-          <Scene key="Chatbot" component={Chatbot} />
+          <Scene key="About" component={About} hideNavBar />
+          <Scene key="Chatbot" component={Chatbot} hideNavBar />
         </Scene>
       </Router>
     );

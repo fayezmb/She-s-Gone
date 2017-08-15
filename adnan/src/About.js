@@ -3,14 +3,15 @@ import { Container, Header, Content, Button, Text, Body } from 'native-base';
 import {
   AppRegistry,
   StyleSheet,
-  View
+  View,
+  StatusBar
 } from 'react-native';
 
 export default class adnan extends Component {
   render() {
     return (
     <Container>
-        <Header />
+    <StatusBar hidden />
         <Content>
       <View style={styles.container}>
         <Text style={styles.instructions}>
